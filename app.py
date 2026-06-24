@@ -5,7 +5,7 @@ import os
 API_KEY = os.getenv("api_key")
 
 st.title("⚽ Futbol Tahmin Sistemi")
-
+st.write("YENİ KOD ÇALIŞIYOR")
 headers = {
     "x-apisports-key": API_KEY
 }
