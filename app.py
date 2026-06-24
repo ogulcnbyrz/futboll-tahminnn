@@ -8,7 +8,7 @@ st.set_page_config(page_title="Futbol Tahmin Sistemi")
 st.title("⚽ Futbol Tahmin Sistemi")
 
 API_KEY = os.getenv("API_FOOTBALL_KEY")
-
+st.write("API KEY:", API_KEY)
 headers = {
     "x-apisports-key": API_KEY
 }
