@@ -138,3 +138,6 @@ if response.status_code == 200:
 
 else:
     st.error(f"API Hatası: {response.status_code}")
+    if response.status_code != 200:
+    st.error(f"Form API Hatası: {response.status_code}")
+    return 0
