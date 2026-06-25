@@ -73,7 +73,14 @@ response = requests.get(
     headers=headers,
     timeout=30
 )
+st.write("Seçilen tarih:", selected_date)
 
+st.write("Status Code:", response.status_code)
+
+try:
+    st.json(response.json())
+except:
+    st.write(response.text)
 if response.status_code != 200:
 
     st.error(f"API Hatası: {response.status_code}")
